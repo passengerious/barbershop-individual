@@ -1,0 +1,139 @@
+.about-us {
+  display: flex;
+}
+
+// image block
+
+.about-us__image-block {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+
+    min-width: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 634px;
+  }
+}
+
+.about-us-img-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 30px;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+
+    margin-right: 64px;
+  }
+}
+
+.about-us-img-list__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+.about-us-img-list__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// text block
+
+.about-us__description {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-family: $textFont;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: $dark;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+
+    background: $dark;
+  }
+}
+
+.about-us__title {
+  margin-bottom: 20px;
+
+  font-family: $headerFont;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(24, 28, 320, 480);
+  }
+
+  color: $dark;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 42px;
+    line-height: 1.17;
+  }
+}
+
+.about-us__call {
+  margin-bottom: 20px;
+
+  font-family: $textFont;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(14, 16, 320, 480);
+  }
+
+  color: $mainTextColor;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.about-us__text {
+  margin-bottom: 40px;
+
+  font-family: $textFont;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(12, 14, 320, 480);
+  }
+
+  color: $mainTextColor;
+}
+
+.about-us__online {
+  @extend %online-button-light;
+
+  @include twoTransitions(color, background-color);
+}

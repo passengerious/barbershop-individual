@@ -1,0 +1,9 @@
+.img-not-loaded {
+  opacity: 0;
+
+  @include transition(opacity, 3000ms);
+}
+
+.img-loaded {
+  opacity: 1;
+}

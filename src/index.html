@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+  </head>
+  <body>
+    <header class="page-header" id="header">
+      <!-- слайдер -->
+      <div class="background">
+        <div class="slider-wrapper">
+          <div class="slider-media">
+            <ul class="follow-us">
+              <li class="follow-us__item">
+                <a
+                  class="follow-us__link follow-us__link--decorated"
+                  href=" https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="follow-us__item">
+                <a
+                  class="follow-us__link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="slider">
+            <ul class="slider__list" id="slider-list">
+              <li class="slider__item slide-1 visuallyhidden" data-slider-item>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/slider-1-desktop-1125.webp 1125w,
+                      ./images/slider-1-desktop-2250.webp 2250w
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-1-tablet-609.webp   609w,
+                      ./images/slider-1-tablet-1218.webp 1218w
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-1-mobile-480.webp 480w,
+                      ./images/slider-1-mobile-960.webp 960w
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-1-desktop-1125.jpg 1125w,
+                      ./images/slider-1-desktop-2250.jpg 2250w
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-1-tablet-609.jpg   609w,
+                      ./images/slider-1-tablet-1218.jpg 1218w
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-1-mobile-480.jpg 480w,
+                      ./images/slider-1-mobile-960.jpg 960w
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="slider__image"
+                    src="./images/slider-1-mobile-480.jpg"
+                    alt="barber-1"
+                    sizes="(min-width: 1280px) 90vw, (min-width: 768px) 80vw,  100vw"
+                  />
+                </picture>
+              </li>
+              <li class="slider__item slide-2 visuallyhidden" data-slider-item>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/slider-2-desktop-1125.webp 1125w,
+                      ./images/slider-2-desktop-2250.webp 2250w
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-2-tablet-609.webp   609w,
+                      ./images/slider-2-tablet-1218.webp 1218w
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-2-mobile-480.webp 480w,
+                      ./images/slider-2-mobile-960.webp 960w
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-2-desktop-1125.jpg 1125w,
+                      ./images/slider-2-desktop-2250.jpg 2250w
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-2-tablet-609.jpg   609w,
+                      ./images/slider-2-tablet-1218.jpg 1218w
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-2-mobile-480.jpg 480w,
+                      ./images/slider-2-mobile-960.jpg 960w
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="slider__image"
+                    src="./images/slider-2-mobile-480.jpg"
+                    alt="barber-2"
+                    sizes="(min-width: 1280px) 90vw, (min-width: 768px) 80vw,  100vw"
+                  />
+                </picture>
+              </li>
+              <li class="slider__item slide-3 visuallyhidden" data-slider-item>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/slider-3-desktop-1125.webp 1125w,
+                      ./images/slider-3-desktop-2250.webp 2250w
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-3-tablet-609.webp   609w,
+                      ./images/slider-3-tablet-1218.webp 1218w
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-3-mobile-480.webp 480w,
+                      ./images/slider-3-mobile-960.webp 960w
+                    "
+                    media="(max-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-3-desktop-1125.jpg 1125w,
+                      ./images/slider-3-desktop-2250.jpg 2250w
+                    "
+                    media="(min-width: 1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-3-tablet-609.jpg   609w,
+                      ./images/slider-3-tablet-1218.jpg 1218w
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider-3-mobile-480.jpg 480w,
+                      ./images/slider-3-mobile-960.jpg 960w
+                    "
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    class="slider__image"
+                    src="./images/slider-3-mobile-480.jpg"
+                    alt="barber-3"
+                    sizes="(min-width: 1280px) 90vw, (min-width: 768px) 80vw,  100vw"
+                  />
+                </picture>
+              </li>
+            </ul>
+          </div>
+          <form class="slider-radio">
+            <div class="slider-radio__wrapper" role="group">
+              <ul class="slider-radio__list" id="slider-radio">
+                <li class="slider-radio__item">
+                  <label class="slider-radio__label" for="first-slider-btn">
+                    <input
+                      type="radio"
+                      name="slider-img"
+                      value="slider-image1"
+                      class="slider-radio__input visuallyhidden slider-radio__first-slide" />
+                    <span
+                      class="slider-radio__icon"
+                      data-slider-btn="first"
+                    ></span
+                  ></label>
+                </li>
+                <li class="slider-radio__item">
+                  <label class="slider-radio__label" for="second-slider-btn">
+                    <input
+                      type="radio"
+                      name="slider-img"
+                      value="slider-image2"
+                      class="slider-radio__input visuallyhidden slider-radio__second-slide" />
+                    <span
+                      class="slider-radio__icon"
+                      data-slider-btn="second"
+                    ></span
+                  ></label>
+                </li>
+                <li class="slider-radio__item">
+                  <label class="slider-radio__label" for="third-slider-btn">
+                    <input
+                      type="radio"
+                      name="slider-img"
+                      value="slider-image3"
+                      class="slider-radio__input visuallyhidden slider-radio__third-slide" />
+                    <span
+                      class="slider-radio__icon"
+                      data-slider-btn="third"
+                    ></span
+                  ></label>
+                </li>
+              </ul>
+            </div>
+          </form>
+          <div class="slider-nav">
+            <ul class="slider-nav__list" data-slider-btns>
+              <li class="slider-nav__item">
+                <button
+                  class="slider-nav__btn slider-nav__btn--prev"
+                  data-slider-prev
+                  disabled
+                >
+                  Назад
+                </button>
+              </li>
+              <li class="slider-nav__item">
+                <button
+                  class="slider-nav__btn slider-nav__btn--next"
+                  data-slider-next
+                >
+                  Вперед
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+      <div class="container">
+        <div class="header-nav">
+          <!-- логотип -->
+          <div class="logo" href="">
+            <svg width="69" height="56">
+              <use href="./images/svg-sprite.svg#icon-logo"></use>
+            </svg>
+          </div>
+
+          <!-- burger-menu button -->
+          <button
+            type="button"
+            class="burger-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="burger-closed"
+                href="./images/svg-sprite.svg#icon-burger-open"
+              ></use>
+              <use
+                class="burger-opened"
+                href="./images/svg-sprite.svg#icon-burger-close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- nav menu (main) -->
+        <div class="nav-main">
+          <!-- navigation menu -->
+          <nav>
+            <ul class="nav-menu">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="/" data-scroll="about-us"
+                  >О нас</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="/" data-scroll="services"
+                  >Услуги и цены</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="/" data-scroll="team"
+                  >Мастера</a
+                >
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="/" data-scroll="contacts"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- contact-us -->
+          <ul class="contact-us">
+            <li class="contact-us__item">
+              <a class="contact-us__tel" href="tel:+38 044 111 11 11"
+                >+38 044 111 11 11</a
+              >
+            </li>
+            <li class="contact-us__item">
+              <a class="contact-us__online" href="/" data-scroll="appointment"
+                >онлайн-запись</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- site heading -->
+        <div class="heading">
+          <p class="heading__description">A hair salon for men in Kyiv</p>
+          <h1 class="heading__main">BarberShop</h1>
+          <p class="heading__about-us">
+            Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
+            со вкусом.
+          </p>
+        </div>
+
+        <!-- backdrop -->
+        <div class="backdrop" data-menu>
+          <!-- burger menu -->
+          <div class="burger-wrapper">
+            <!-- navigation menu (burger) -->
+            <nav>
+              <ul class="nav-menu" data-backdrop-nav>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link" href="/" data-scroll="about-us"
+                    >О нас</a
+                  >
+                </li>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link" href="/" data-scroll="services"
+                    >Услуги и цены</a
+                  >
+                </li>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link" href="/" data-scroll="team"
+                    >Мастера</a
+                  >
+                </li>
+                <li class="nav-menu__item">
+                  <a class="nav-menu__link" href="/" data-scroll="contacts"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <!-- contact-us (burger) -->
+            <ul class="contact-us">
+              <li class="contact-us__item">
+                <a class="contact-us__tel" href="tel:+38 044 111 11 11"
+                  >+38 044 111 11 11</a
+                >
+              </li>
+              <li class="contact-us__item">
+                <a
+                  class="contact-us__online"
+                  href="/"
+                  data-scroll="appointment"
+                  data-backdrop-online
+                  >онлайн-запись</a
+                >
+              </li>
+            </ul>
+
+            <!-- follow-us (burger) -->
+            <ul class="follow-us">
+              <li class="follow-us__item">
+                <a
+                  class="follow-us__link follow-us__link--decorated"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="follow-us__item">
+                <a
+                  class="follow-us__link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- section - about-us -->
+    <section class="section" id="about-us">
+      <div class="about-us container">
+        <div class="about-us__image-block">
+          <ul class="about-us-img-list">
+            <li class="about-us-img-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-us-1-desktop-270.webp 270w,
+                    ./images/about-us-1-desktop-540.webp 540w
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-us-1-tablet-330.webp 330w,
+                    ./images/about-us-1-tablet-660.webp 660w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-us-1-desktop-270.jpg 270w,
+                    ./images/about-us-1-desktop-540.jpg 540w
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-us-1-tablet-330.jpg 330w,
+                    ./images/about-us-1-tablet-660.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="about-us-img-list__image"
+                  src="./images/about-us-1-tablet-330.jpg"
+                  alt="picture with a barber"
+                  sizes="(min-width: 1280px) 25vw, 45vw"
+                />
+              </picture>
+            </li>
+            <li class="about-us-img-list__item">
+              <picture>
+                <source
+                  srcset="
+                    ./images/about-us-2-desktop-270.webp 270w,
+                    ./images/about-us-2-desktop-540.webp 540w
+                  "
+                  media="(min-width: 1280px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-us-2-tablet-330.webp 330w,
+                    ./images/about-us-2-tablet-660.webp 660w
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/about-us-2-desktop-270.jpg 270w,
+                    ./images/about-us-2-desktop-540.jpg 540w
+                  "
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="
+                    ./images/about-us-2-tablet-330.jpg 330w,
+                    ./images/about-us-2-tablet-660.jpg 660w
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="about-us-img-list__image"
+                  src="./images/about-us-2-tablet-330.jpg"
+                  alt="picture with a barber"
+                  sizes="(min-width: 1280px) 25vw, 45vw"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <div class="about-us__text-block">
+          <p class="about-us__description">о нас</p>
+          <h2 class="about-us__title">
+            Лучший Барбершоп<br />
+            твоего города
+          </h2>
+          <p class="about-us__call">
+            Если ты хочешь добавить в свой образ больше уверенности – тебе точно
+            к нам.
+          </p>
+          <p class="about-us__text">
+            Мы команда, которая никогда не останавливается на достигнутом и
+            жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+            никогда не сможешь быть прежним. Мы команда, которая всегда с
+            клиентами "на одной волне". Поэтому, мы всегда готовы
+            усовершенствовать каждого, кто к нам приходит!
+          </p>
+          <a href="/" class="about-us__online online-appointment" data-scroll="appointment"
+            >онлайн-запись</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- section-services -->
+    <div class="section-services-endless-bg-color">
+      <section class="section section-services" id="services">
+        <div class="services container">
+          <p class="services__description">
+            Проведи время в компании лучших мастеров
+          </p>
+          <h2 class="services__title">Услуги и цены</h2>
+          <ul class="services__pricelist pricelist">
+            <li class="pricelist__section">
+              <ul>
+                <li class="pricelist__item">
+                  <span>Мужская стрижка</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 300 грн.</span>
+                </li>
+                <li class="pricelist__item">
+                  <span>Стрижка бороды</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 200 грн.</span>
+                </li>
+                <li class="pricelist__item">
+                  <span>Стрижка усов</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 200 грн.</span>
+                </li>
+                <li class="pricelist__item">
+                  <span>Бритье опасной бритвой</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 200 грн.</span>
+                </li>
+              </ul>
+            </li>
+            <li class="pricelist__section">
+              <ul>
+                <li class="pricelist__item">
+                  <span>Cтрижка у стажера</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 50 грн.</span>
+                </li>
+                <li class="pricelist__item">
+                  <span>Стрижка под насадку</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 200 грн.</span>
+                </li>
+                <li class="pricelist__item">
+                  <span>Детская стрижка (до 12 лет)</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 300 грн.</span>
+                </li>
+                <li class="pricelist__item">
+                  <span>Камуфлирование седины</span>
+                  <div class="pricelist__underline"></div>
+                  <span>от 200 грн.</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <a
+            href="/"
+            class="services__online online-appointment"
+            data-scroll="appointment"
+            >онлайн-запись</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <!-- section - strengths -->
+    <section class="section">
+      <div class="strengths container">
+        <div class="strengths__textarea">
+          <p class="strengths__description">старая традиционная школа</p>
+          <h2 class="strengths__title">
+            Почему приходят<br />
+            именно к нам
+          </h2>
+          <p class="strengths__text">
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и
+            прочувствовать, чем 10 раз прочитать.
+          </p>
+        </div>
+        <ul class="dashboard">
+          <li class="dashboard__item">
+            <div class="dashboard__number">
+              <span class="dashboard__value">600</span
+              ><span class="dashboard__sup">+</span>
+            </div>
+            <p class="dashboard__text">Довольных клиентов в день</p>
+          </li>
+          <li class="dashboard__item">
+            <div class="dashboard__number">
+              <span class="dashboard__value">50</span
+              ><span class="dashboard__sup">+</span>
+            </div>
+            <p class="dashboard__text">Наград за отличный сервис</p>
+          </li>
+          <li class="dashboard__item">
+            <div class="dashboard__number">
+              <span class="dashboard__value">20</span
+              ><span class="dashboard__sup">+</span>
+            </div>
+            <p class="dashboard__text">Лучших мастеров Киева</p>
+          </li>
+          <li class="dashboard__item">
+            <div class="dashboard__number">
+              <span class="dashboard__value">100</span
+              ><span class="dashboard__sup">+</span>
+            </div>
+            <p class="dashboard__text">Подарков постоянным клиентам</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section - team -->
+    <section class="section team-section" id="team">
+      <div class="team container">
+        <p class="team__description">для настоящих ценителей атмосферы</p>
+        <h2 class="team__title">Наши мастера</h2>
+        <ul class="team-list">
+          <!-- team member -->
+          <li class="team-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/team-john-desktop-370.webp 370w,
+                  ./images/team-john-desktop-740.webp 740w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-john-tablet-450.webp 450w,
+                  ./images/team-john-tablet-900.webp 900w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-john-mobile-418.webp 418w,
+                  ./images/team-john-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-john-desktop-370.jpg 370w,
+                  ./images/team-john-desktop-740.jpg 740w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/team-john-tablet-450.jpg 450w,
+                  ./images/team-john-tablet-900.jpg 900w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/team-john-mobile-418.jpg 418w,
+                  ./images/team-john-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="team-list__image lazyload"
+                data-src="./images/team-john-mobile-418.jpg"
+                alt="Barber John"
+                sizes="(min-width: 1280px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+            <p class="team-list__name">John Smith</p>
+            <p class="team-list__position">Extreme Barber</p>
+            <ul class="socialmedia team-list__socialmedia">
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Инстаграм"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Твиттер"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Фейсбук"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Линкедин"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- team member -->
+          <li class="team-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/team-michele-desktop-370.webp 370w,
+                  ./images/team-michele-desktop-740.webp 740w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-michele-tablet-450.webp 450w,
+                  ./images/team-michele-tablet-900.webp 900w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-michele-mobile-418.webp 418w,
+                  ./images/team-michele-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-michele-desktop-370.jpg 370w,
+                  ./images/team-michele-desktop-740.jpg 740w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/team-michele-tablet-450.jpg 450w,
+                  ./images/team-michele-tablet-900.jpg 900w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/team-michele-mobile-418.jpg 418w,
+                  ./images/team-michele-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="team-list__image lazyload"
+                data-src="./images/team-michele-mobile-418.jpg"
+                alt="Barber Michele"
+                sizes="(min-width: 1280px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+            <p class="team-list__name">Michele Doe</p>
+            <p class="team-list__position">Extreme Barber</p>
+            <ul class="socialmedia team-list__socialmedia">
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Инстаграм"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Твиттер"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Фейсбук"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Линкедин"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- team member -->
+          <li class="team-list__item">
+            <picture
+              ><source
+                srcset="
+                  ./images/team-alan-desktop-370.webp 370w,
+                  ./images/team-alan-desktop-740.webp 740w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-alan-tablet-450.webp 450w,
+                  ./images/team-alan-tablet-900.webp 900w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-alan-mobile-418.webp 418w,
+                  ./images/team-alan-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team-alan-desktop-370.jpg 370w,
+                  ./images/team-alan-desktop-740.jpg 740w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/team-alan-tablet-450.jpg 450w,
+                  ./images/team-alan-tablet-900.jpg 900w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/team-alan-mobile-418.jpg 418w,
+                  ./images/team-alan-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="team-list__image lazyload"
+                data-src="./images/team-alan-mobile-418.jpg"
+                alt="Barber Alan"
+                sizes="(min-width: 1280px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+            <p class="team-list__name">Alan Black</p>
+            <p class="team-list__position">Extreme Barber</p>
+            <ul class="socialmedia team-list__socialmedia">
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Инстаграм"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Твиттер"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Фейсбук"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialmedia__item">
+                <a
+                  class="socialmedia__link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Ссылка на Линкедин"
+                >
+                  <svg class="socialmedia__icon" width="20" height="20">
+                    <use
+                      href="./images/svg-sprite.svg#icon-social-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- gallery section -->
+    <section class="section">
+      <div class="our-gallery container">
+        <div class="our-gallery__description-wrapper">
+          <p class="our-gallery__description">
+            На латинском языке “барба” означает “борода”
+          </p>
+        </div>
+        <ul class="gallery our-gallery__gallery">
+          <!-- item 1 -->
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery-1-desktop-270.webp 270w,
+                  ./images/gallery-1-desktop-540.webp 540w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-1-tablet-330.webp 330w,
+                  ./images/gallery-1-tablet-660.webp 660w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-1-mobile-418.webp 418w,
+                  ./images/gallery-1-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-1-desktop-270.jpg 270w,
+                  ./images/gallery-1-desktop-540.jpg 540w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-1-tablet-330.jpg 330w,
+                  ./images/gallery-1-tablet-660.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-1-mobile-418.jpg 418w,
+                  ./images/gallery-1-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="gallery__image lazyload"
+                data-src="./images/gallery-1-mobile-418.jpg"
+                alt="gallery image"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+          </li>
+          <!-- item 2 -->
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery-2-desktop-270.webp 270w,
+                  ./images/gallery-2-desktop-540.webp 540w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-2-tablet-330.webp 330w,
+                  ./images/gallery-2-tablet-660.webp 660w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-2-mobile-418.webp 418w,
+                  ./images/gallery-2-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-2-desktop-270.jpg 270w,
+                  ./images/gallery-2-desktop-540.jpg 540w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-2-tablet-330.jpg 330w,
+                  ./images/gallery-2-tablet-660.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-2-mobile-418.jpg 418w,
+                  ./images/gallery-2-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="gallery__image lazyload"
+                data-src="./images/gallery-2-mobile-418.jpg"
+                alt="gallery image"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+          </li>
+          <!-- item 3 -->
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery-3-desktop-270.webp 270w,
+                  ./images/gallery-3-desktop-540.webp 540w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-3-tablet-330.webp 330w,
+                  ./images/gallery-3-tablet-660.webp 660w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-3-mobile-418.webp 418w,
+                  ./images/gallery-3-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-3-desktop-270.jpg 270w,
+                  ./images/gallery-3-desktop-540.jpg 540w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-3-tablet-330.jpg 330w,
+                  ./images/gallery-3-tablet-660.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-3-mobile-418.jpg 418w,
+                  ./images/gallery-3-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="gallery__image lazyload"
+                data-src="./images/gallery-3-mobile-418.jpg"
+                alt="gallery image"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+          </li>
+          <!-- item 4 -->
+          <li class="gallery__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/gallery-4-desktop-270.webp 270w,
+                  ./images/gallery-4-desktop-540.webp 540w
+                "
+                media="(min-width: 1280px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-4-tablet-330.webp 330w,
+                  ./images/gallery-4-tablet-660.webp 660w
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-4-mobile-418.webp 418w,
+                  ./images/gallery-4-mobile-836.webp 836w
+                "
+                media="(max-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/gallery-4-desktop-270.jpg 270w,
+                  ./images/gallery-4-desktop-540.jpg 540w
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-4-tablet-330.jpg 330w,
+                  ./images/gallery-4-tablet-660.jpg 660w
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/gallery-4-mobile-418.jpg 418w,
+                  ./images/gallery-4-mobile-836.jpg 836w
+                "
+                media="(max-width: 768px)"
+              />
+              <img
+                loading="lazy"
+                class="gallery__image lazyload"
+                data-src="./images/gallery-4-mobile-418.jpg"
+                alt="gallery image"
+                sizes="(min-width: 1200px) 33vw, (min-width: 768px) 65vw,  100vw"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="page-footer">
+      <div class="container-desktop">
+        <div class="page-footer__wrapper">
+          <!-- online form -->
+          <div class="online-form section" id="appointment">
+            <div class="container-non-desktop">
+              <h2 class="online-form__title">Онлайн-запись</h2>
+              <form class="online-form__form form">
+                <ul class="form-data form__form-data">
+                  <li class="form-data__item">
+                    <label class="form-field">
+                      <input
+                        class="form-field__input"
+                        type="text"
+                        name="name"
+                        placeholder="Имя*"
+                      />
+                    </label>
+                  </li>
+                  <li class="form-data__item">
+                    <label class="form-field">
+                      <input
+                        class="form-field__input"
+                        type="tel"
+                        name="tel"
+                        placeholder="Телефон*"
+                      />
+                    </label>
+                  </li>
+                  <li class="form-data__item">
+                    <label class="form-field">
+                      <textarea
+                        class="form-field__input form-field__input--comment"
+                        name="comment"
+                        placeholder="Сообщение"
+                        rows="3"
+                      ></textarea>
+                    </label>
+                  </li>
+                </ul>
+                <button class="form__button" type="submit">отправить</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- contacts -->
+          <div class="contacts section" id="contacts">
+            <div class="container-non-desktop">
+              <div class="contacts__main-wrapper">
+                <h2 class="contacts__title">Контакты</h2>
+                <div class="contacts__wrapper">
+                  <ul class="address">
+                    <li class="address__item">
+                      <a
+                        href="https://www.google.com/maps/place/Vasylkivska+St,+5%2F7,+Kyiv,+02000/@50.39616,30.5026793,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4c8c95f581b9b:0x94615950b26aa5ec!8m2!3d50.39616!4d30.504868"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="address__link"
+                      >
+                        <svg class="address__icon" width="24" height="24">
+                          <use
+                            href="./images/svg-sprite.svg#icon-contacts-location"
+                          ></use>
+                        </svg>
+                        ул. Васильковая, 7А, Киев, 08132
+                      </a>
+                    </li>
+                    <li class="address__item">
+                      <a href="tel:+38 044 111 11 11" class="address__link">
+                        <svg class="address__icon" width="24" height="24">
+                          <use
+                            href="./images/svg-sprite.svg#icon-contacts-tel"
+                          ></use>
+                        </svg>
+                        +38 044 111 11 11
+                      </a>
+                    </li>
+                    <li class="address__item">
+                      <a
+                        href="mailto:barbershop@email.com"
+                        class="address__link address__link--underlined"
+                      >
+                        <svg class="address__icon" width="24" height="24">
+                          <use
+                            href="./images/svg-sprite.svg#icon-contacts-mail"
+                          ></use>
+                        </svg>
+                        barbershop@email.com
+                      </a>
+                    </li>
+                  </ul>
+                  <!-- working hours -->
+                  <div class="working-hours">
+                    <p class="working-hours__description">время работы</p>
+                    <p class="working-hours__data">Ежедневно с 9:00 до 22:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- socialmedia -->
+    <div class="footer-socialmedia">
+      <div class="container footer-socialmedia__wrapper">
+        <ul class="social-list footer-socialmedia__list">
+          <li class="social-list__item">
+            <a
+              href=""
+              class="social-list__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ссылка на Инстаграм"
+              >Instagram</a
+            >
+          </li>
+          <li class="social-list__item">
+            <a
+              href=""
+              class="social-list__link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ссылка на Ютьюб"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+        <p class="footer-socialmedia__copyright copyright">
+          <svg class="copyright__icon" width="12" height="12">
+            <use href="./images/svg-sprite.svg#copyright"></use>
+          </svg>
+          pet-project
+        </p>
+      </div>
+    </div>
+
+    <!-- button - up to top -->
+    <div class="up-btn-wrapper visuallyhidden" data-up-btn>
+      <svg class="up-btn__icon">
+        <use href="./images/svg-sprite.svg#up"></use>
+      </svg>
+    </div>
+  </body>
+</html>

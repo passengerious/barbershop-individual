@@ -1,0 +1,143 @@
+.team-section {
+  background-color: $bgSection;
+}
+
+.team {
+  @media screen and (min-width: $tablet) and (max-width: ($desktop - 1)) {
+    padding-right: 159px;
+    padding-left: 159px;
+  }
+}
+
+.team__description {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-family: $textFont;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(9, 11, 320, 480);
+  }
+
+  color: $dark;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+
+    background: $dark;
+  }
+}
+
+.team__title {
+  margin-bottom: 44px;
+
+  font-family: $headerFont;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(32, 42, 320, 480);
+  }
+
+  color: $dark;
+}
+
+.team-list {
+  font-family: $textFont;
+  text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.team-list__item {
+  @media screen and (min-width: $desktop) {
+    width: calc(((100% - 60px)) / 3);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 64px;
+
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+  }
+}
+
+.team-list__image {
+  display: block;
+
+  margin-bottom: 30px;
+
+  max-width: 100%;
+  height: auto;
+}
+
+.team-list__name {
+  margin-bottom: 8px;
+
+  font-size: 18px;
+  line-height: 1.39;
+
+  letter-spacing: 0.02em;
+
+  color: $dark;
+}
+
+.team-list__position {
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+
+  color: $accentColor;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+}
+
+.socialmedia__item {
+  background-color: $white;
+
+  border-radius: 50%;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.socialmedia__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  color: $dark;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+}

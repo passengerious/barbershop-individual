@@ -1,0 +1,146 @@
+.strengths {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+.strengths__description {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  font-family: $textFont;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(9, 11, 320, 480);
+  }
+
+  color: $dark;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+
+    background: $dark;
+  }
+}
+
+.strengths__title {
+  margin-bottom: 20px;
+
+  font-family: $headerFont;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(26, 42, 320, 480);
+  }
+
+  color: $dark;
+}
+
+.strengths__text {
+  margin-bottom: 44px;
+
+  font-family: $textFont;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(14, 18, 320, 480);
+  }
+
+  color: $mainTextColor;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 500px;
+  }
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+
+  font-family: $textFont;
+  text-align: center;
+
+  color: $dark;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 240px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 0px;
+    margin-right: 115px;
+
+    max-width: 400px;
+  }
+}
+
+.dashboard__item {
+  padding: 20px 30px;
+  margin: 15px;
+
+  width: calc((100% - 60px) / 2);
+
+  text-align: center;
+
+  background-color: $bgSection;
+
+  &:nth-child(2n) {
+    margin-top: 45px;
+    margin-bottom: -15px;
+  }
+}
+
+.dashboard__number {
+  display: flex;
+  align-items: last baseline;
+  justify-content: center;
+}
+
+.dashboard__value {
+  margin-bottom: 6px;
+
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+}
+
+.dashboard__sup {
+  padding-top: 7px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.38;
+
+  color: $accentColor;
+}
+
+.dashboard__text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+
+  @media (max-width: ($mobile - 1)) {
+    font-size: calcFluidFontSize(9, 11, 320, 480);
+  }
+}
